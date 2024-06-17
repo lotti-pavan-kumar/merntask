@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid white;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            background-color: #96D4D4;
+        }
+        .container{
+            border: 2px solid black;
+            width :45%;
+            background-color:gainsboro;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="width:50%">
+        <tr>
+            <th>firstname</th>
+            <th>lastname</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td>jill</td>
+            <td>eve</td>
+            <td>john</td>
+        </tr>
+        <tr>
+            <td>smith</td>
+            <td>jackson</td>
+            <td>doe</td>
+        </tr>
+    </table> 
+    <p>Lists can be nested(list inside list)</p>
+    <ul>
+        <li>cofee</li>
+        <li>tea</li>
+        
+            <ul type="circle">
+                <li>balck tea</li>
+                <li>green tea</li>
+            </ul>
+        
+        <li>milk</li>
+    </ul>
+
+<div class="container">
+    <p>click any of the following links</p>
+    <a href="www.google.com" target="_blank">opens in new</a><span>|</span>
+    <a href="www.google.com" target="_self">opens in self</a><span>|</span>
+    <a href="www.google.com" target="_parent">opens in parent</a><span>|</span>
+    <a href="www.google.com" target="_top">opens in box</a><span>|</span>
+    <a href="pavankumarlotti@gmail.com" >send email</a><span>|</span>
+</div>
+
+<br>
+<form action="">
+    <label for="fullname">fullname:</label>
+    <input type="text" placeholder="vincet maverick durano" ><br>
+    <label for="username">username:</label>
+    <input type="text" placeholder="vinz"><br>
+    <label for="password">password:</label>
+    <input type="password" ><br>
+    <label for="repassword">Re password:</label>
+    <input type="password" ><br>
+    <label for="address">Address:</label>
+    <input type="address" placeholder="cebu,philippines"><br>
+    <label for="age">Age:</label>
+    <input type="number" ><br>
+    <label for="Gender">gender:</label>
+    <select name="gender" id="">
+        <option value="male">male</option>
+        <option value="female">female</option>
+    </select><br>
+    <button type="submit">Save</button>
+
+    
+
+</form>
+
+</body>
+
+</html>
+
+
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+    body{
+        background-color: rgb(169, 45, 105);
+       
+    }
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ca105d;
+}
+
+.registration-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"],
+.registration-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.registration-form input[type="radio"],
+.registration-form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.registration-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.registration-form button:hover {
+  background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+<form class="registration-form">
+  <h2>Register Now</h2>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Your Name">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Your Email">
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" placeholder="Your Password">
+
+  <label for="phone_number">Phone Number:</label>
+  <input type="text" id="phone_number" name="phone_number" placeholder="Your Phone Number">
+
+  <label for="gender">Gender:</label>
+  <input type="radio" id="gender_male" name="gender" value="male">
+  <label for="gender_male">Male</label>
+  <input type="radio" id="gender_female" name="gender" value="female">
+  <label for="gender_female">Female</label>
+  <input type="radio" id="gender_other" name="gender" value="other">
+  <label for="gender_other">Other</label><br>
+
+  <label for="language">Language:</label>
+  <select id="language" name="language">
+    <option value="">Select Language</option>
+    <option value="english">English</option>
+    <option value="spanish">Spanish</option>
+    <option value="french">French</option>
+  </select><br>
+
+  <label for="zip_code">Zip Code:</label>
+  <input type="text" id="zip_code" name="zip_code" placeholder="Your Zip Code">
+
+  <label for="about">About:</label>
+  <textarea id="about" name="about" rows="4" placeholder="Write about yourself..."></textarea>
+
+  <button type="submit">Register</button>
+</form>
+</body>
+</html>

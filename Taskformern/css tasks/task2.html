@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* vertical navbar */
+        .vertical-navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: skyblue;
+        }
+
+        .vertical-navbar li a {
+            display: block;
+            color: blue;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .vertical-navbar li a.active {
+            background-color: orange;
+            color: white;
+        }
+
+        .vertical-navbar li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+
+        /* horizontal navbar */
+        .horizontal-navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: gainsboro;
+        }
+
+        .horizontal-navbar li {
+            float: left;
+        }
+
+        .horizontal-navbar li a {
+            display: block;
+            color: blue;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .horizontal-navbar li a:hover:not(.active) {
+            background-color: #333;
+            color: white;
+        }
+
+        .horizontal-navbar li a.active {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="horizontal-navbar">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">Html</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Bootstrap</a></li>
+    </ul>
+
+    <ul class="vertical-navbar">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">Html</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Bootstrap</a></li>
+    </ul>
+
+</body>
+
+</html>
